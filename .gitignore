@@ -1,0 +1,29 @@
+# ---- 依赖与构建产物 ----
+node_modules/
+dist/
+lib/**/*.map
+
+# ---- 上游参考实现（clone，只读，不入库）----
+dsh-fish-memory/
+
+# ---- codegraph 索引 ----
+.codegraph/
+**/.codegraph/
+
+# ---- 临时目录 ----
+tmp/
+.tmp/
+
+# ---- 运行时记忆数据（只在本机，不入库）----
+data/
+*.sqlite
+*.sqlite-journal
+*.db
+memory.json
+memories.jsonl
+
+# ---- 杂项 ----
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
