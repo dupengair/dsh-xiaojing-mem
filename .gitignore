@@ -5,6 +5,7 @@ lib/**/*.map
 
 # ---- 上游参考实现（clone，只读，不入库）----
 dsh-fish-memory/
+3d-memory-sea/
 
 # ---- codegraph 索引 ----
 .codegraph/

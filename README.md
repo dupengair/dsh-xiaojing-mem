@@ -1,5 +1,7 @@
 # 小鯨记忆
 
+仓库：[`dupengair/dsh-xiaojing-mem`](https://github.com/dupengair/dsh-xiaojing-mem)
+
 给小鯨（DSH 里的伙伴人格）做一套长期记忆系统。核心不是「记得多」，是**记得对**——每条记忆都带来源和把握，会随时间降温而不是被抹掉，而且能看见。
 
 ## 项目目标
@@ -14,7 +16,12 @@
 
 起步顺序：先做行动机制的最小闭环（写入 → 开场注入三到五条 → 检索 → 衰减），跑两周验证会不会「记歪」，再动星图。
 
-参考实现：[`Yuuyuko-uu/dsh-fish-memory`](https://github.com/Yuuyuko-uu/dsh-fish-memory) v1.5.8（本目录 `dsh-fish-memory/` 为只读 clone）。
+参考实现（均为只读 clone）：
+
+| 目录 | 版本 | 参考哪一层 | 看点 |
+| --- | --- | --- | --- |
+| `dsh-fish-memory/` | v1.5.8（[`Yuuyuko-uu/dsh-fish-memory`](https://github.com/Yuuyuko-uu/dsh-fish-memory)） | 行动机制 | 记忆怎么形成、过滤、遗忘与沉淀；宿主半侧 + 浏览器半侧的插件结构 |
+| `3d-memory-sea/` | v0.1.0（[`asdfd3/3d-memory-sea`](https://github.com/asdfd3/3d-memory-sea)，包名 `memory-sea`） | 展示机制 | 把长期记忆/聊天/日记画成可旋转的三维星海；纯 Canvas 2D 零依赖，数据层三个纯函数模块可单独接 |
 
 ## 目录结构
 
@@ -23,7 +30,8 @@
 ├── AGENT.md          # 本目录工作约定（动手前先看）
 ├── README.md         # 本文
 ├── docs/             # 开发文档（<序号>_<事项>.md）
-├── dsh-fish-memory/  # 上游参考实现（clone，只读，不入库）
+├── dsh-fish-memory/  # 上游参考：行动机制（clone，只读，不入库）
+├── 3d-memory-sea/    # 上游参考：展示机制（clone，只读，不入库）
 └── tmp/              # 临时文件（不入库）
 ```
 
