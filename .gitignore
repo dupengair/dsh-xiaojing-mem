@@ -1,30 +1,8 @@
-# ---- 依赖与构建产物 ----
-node_modules/
-dist/
-lib/**/*.map
-
-# ---- 上游参考实现（clone，只读，不入库）----
-dsh-fish-memory/
-3d-memory-sea/
-
-# ---- codegraph 索引 ----
-.codegraph/
-**/.codegraph/
-
-# ---- 临时目录 ----
-tmp/
-.tmp/
-
-# ---- 运行时记忆数据（只在本机，不入库）----
-data/
-*.sqlite
-*.sqlite-journal
-*.db
-memory.json
-memories.jsonl
-
-# ---- 杂项 ----
-*.log
-.DS_Store
-Thumbs.db
-desktop.ini
+# 本仓库只收文档：AGENT.md、README.md、docs/
+# 先忽略本目录下所有文件与目录，再把要收的放行。
+*
+!.gitignore
+!AGENT.md
+!README.md
+!docs/
+!docs/**
